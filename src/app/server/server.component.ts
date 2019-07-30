@@ -8,10 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.scss']
 })
 export class ServerComponent implements OnInit {
-
-  constructor() { }
+ 
 
   ngOnInit() {
   }
-
 }

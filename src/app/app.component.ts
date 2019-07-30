@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MediaObserver } from '@angular/flex-layout';
 
 @Component({
   selector: 'ui-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngSandbox';
+  constructor(public media: MediaObserver) {}
 }
+
