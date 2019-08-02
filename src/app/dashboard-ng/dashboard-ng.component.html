@@ -1,0 +1,87 @@
+<div class="grid-container">
+  <div class="parent"
+       fxLayout="row"
+       fxLayout.xs="column">
+
+   <mat-card class="large"
+            fxFlex="50%"
+            >
+            <mat-card-header class="header">
+                Applicants
+            <span class="example-spacer"></span>
+            <a routerLink="/applicants" >
+                <mat-icon class="icon"
+                          aria-hidden="false"
+                          routerLinkActive="mat-accent"
+                          aria-label="Nav icon">settings</mat-icon>
+              </a>
+            </mat-card-header>
+            <hr>
+   </mat-card>
+
+    <mat-card class="large"
+            fxFlex="50%"
+            >
+            <mat-card-header class="header">
+                Asset Data
+            <span class="example-spacer"></span>
+            <a href="#">
+                <mat-icon class="icon"
+                          aria-hidden="false"
+                          routerLinkActive="mat-accent"
+                          aria-label="Nav icon">timeline</mat-icon>
+              </a>
+            </mat-card-header>
+            <hr>
+   </mat-card>
+
+   <mat-card class="large"
+             fxFlex="50%"
+             >
+       <mat-card-header class="header">
+       Risk Data
+         <span class="example-spacer"></span>
+           <a href="#">
+          <mat-icon class="icon"
+                 aria-hidden="false"
+                 routerLinkActive="mat-accent"
+                 aria-label="Nav icon">list</mat-icon>
+           </a>
+        </mat-card-header>
+        <hr>
+      </mat-card>
+  </div>
+</div>
+
+<div class ="grid-container">
+  <div class="parent"
+       fxLayout="row"
+       fxLayout.xs="column">
+
+       <mat-accordion class="large"
+                      fxFlex="100%">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Personal data
+              </mat-panel-title>
+              <mat-panel-description>
+                Type your name and age
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Self aware panel
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+  </div>
+</div>
+
+

@@ -1,29 +1,27 @@
-  button {
-    color: #BB86FC;
+
+.grid-list-container {
+  margin: 16px;
+}
+
+.tileLarge {
+  background-color: #302f2f;
+ .tileHeader {
+    color: #1EB980
   }
-  
-  .parent {
-    height: 100px;
-  }
-  
-  .small {
-    background-color: #302f2f;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .medium {
-    background-color: #302f2f;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .large {
-    background-color:  #302f2f;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
+}
+
+.content {
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.icon {
+  padding: 0 14px;
+  color: #1EB980;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+

@@ -1,19 +1,77 @@
-<h3>Dashboard</h3>
-<hr>
+<div class="grid-list-container">
+    <mat-grid-list class="mat-typography"
+                   cols="4"
+                   gutterSize="16">
 
-<div class="parent"
-     fxLayout="row"
-     fxLayout.xs="column">
-
-   <div fxFlex="50%">
-        <ui-income></ui-income>
+        <mat-grid-tile class="tileLarge">
+          <mat-grid-tile-header class="tileHeader">
+              <h2>Applications Data</h2>
+              <span class="example-spacer"></span>
+              <a href="#">
+              <mat-icon class="icon"
+                        aria-hidden="false"
+                        routerLinkActive="mat-accent"
+                        aria-label="Nav icon">pageview</mat-icon>
+              </a>
+          </mat-grid-tile-header>
+          <div class="content">
+          <h2>Total Applications</h2>
+          <hr class="line">
+          <mat-list-item>2019 = 34,000</mat-list-item>
+          <mat-list-item>2018 = 45,100</mat-list-item>
         </div>
-  
-  <div fxFlex="50%">
-       <ui-server></ui-server>
-       </div>
+       </mat-grid-tile>
 
-  <div fxFlex="35">
-       <ui-risk></ui-risk>
-  </div>
-</div>  
+       <mat-grid-tile class="tileLarge"
+                      colspan="2">
+          <mat-grid-tile-header class="tileHeader">
+              <h2>Approval Data</h2>
+              <span class="example-spacer"></span>
+              <a href="#">
+              <mat-icon class="icon"
+                        aria-hidden="false"
+                        routerLinkActive="mat-accent"
+                        aria-label="Nav icon">pageview</mat-icon>
+              </a>
+          </mat-grid-tile-header>
+          <div class="content">
+          <h2>Approvals</h2>
+          <hr class="line">
+          <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                     Current Approvals
+              </mat-panel-title>
+              <mat-panel-description>
+                  {{panelOpenState ? 'open' : 'closed'}}
+                 </mat-panel-description>
+             </mat-expansion-panel-header>
+            <p>2019: 6,605</p>
+            <p>2018: 10,586</p>
+           </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+       </mat-grid-tile>
+
+       <mat-grid-tile class="tileLarge">
+          <mat-grid-tile-header class="tileHeader">
+              <h2>Placeholder</h2>
+              <span class="example-spacer"></span>
+              <a href="#">
+              <mat-icon class="icon"
+                        aria-hidden="false"
+                        routerLinkActive="mat-accent"
+                        aria-label="Nav icon">pageview</mat-icon>
+              </a>
+          </mat-grid-tile-header>
+          <div class="content">
+          <h2>TODO</h2>
+          <mat-list-item></mat-list-item>
+          <mat-list-item></mat-list-item>
+        </div>
+       </mat-grid-tile>
+   </mat-grid-list>
+</div>
+

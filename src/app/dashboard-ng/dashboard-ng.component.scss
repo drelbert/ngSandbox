@@ -1,0 +1,53 @@
+.grid-container {
+  margin: 20px;
+}
+
+.parent {
+  height: 200px;
+}
+
+.small {
+  background-color: #302f2f;
+  display: block;
+  padding: 16px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.medium {
+  background-color: #302f2f;
+  display: block;
+  padding: 16px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.large {
+  background-color: #302f2f;
+  display: block;
+  padding: 16px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header{
+  color:#1EB980;
+}
+
+.icon {
+  padding: 0 14px;
+  color: #1EB980;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
