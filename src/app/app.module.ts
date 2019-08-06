@@ -11,6 +11,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 
 import { MatButtonModule,
@@ -19,7 +20,6 @@ import { MatButtonModule,
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardNgComponent } from './dashboard-ng/dashboard-ng.component';
 import { HeaderComponent } from './header/header.component';
 import { ApplicantListComponent } from './applicants/applicant-list/applicant-list.component';
@@ -37,7 +37,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
     DashboardNgComponent,
     HeaderComponent,
     ApplicantListComponent,
@@ -64,7 +63,8 @@ const appRoutes: Routes = [
     MatListModule,
     MatDividerModule,
     MatExpansionModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
