@@ -1,0 +1,9 @@
+Risk Dashboard Illustrating Cross Component Data Binding
+<div>
+    <p>
+      <ui-risk-factors *ngFor="let riskFactor of riskFactors"
+                       [factor]="riskFactor"
+      ></ui-risk-factors>
+    </p>
+</div>
+

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -11,9 +12,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
-import {MatTableModule} from '@angular/material/table';
-import {MatTabsModule} from '@angular/material/tabs';
-
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule,
          MatToolbarModule,
          MatCardModule } from '@angular/material';
@@ -27,11 +27,15 @@ import { ApplicantComponent } from './applicants/applicant-list/applicant/applic
 import { ApplicantsComponent } from './applicants/applicants.component';
 import { ApplicantDetailComponent } from './applicants/applicant-detail/applicant-detail.component';
 import { BaseComponent } from './base/base.component';
+import { RiskDashboardComponent } from './risk/risk-dashboard.component';
+import { RiskFactorsComponent } from './risk/risk-factors/risk-factors.component';
+
 
 
 const appRoutes: Routes = [
   { path: '', component: BaseComponent },
-  { path: 'applicants', component: ApplicantsComponent}
+  { path: 'applicants', component: ApplicantsComponent },
+  { path: 'risk', component: RiskDashboardComponent }
 ];
 
 @NgModule({
@@ -43,7 +47,9 @@ const appRoutes: Routes = [
     ApplicantComponent,
     ApplicantsComponent,
     ApplicantDetailComponent,
-    BaseComponent
+    BaseComponent,
+    RiskDashboardComponent,
+    RiskFactorsComponent
 
   ],
   imports: [
@@ -55,6 +61,7 @@ const appRoutes: Routes = [
     MatCardModule,
     FlexLayoutModule,
     FormsModule,
+    MatFormFieldModule,
     MatGridListModule,
     MatMenuModule,
     MatIconModule,

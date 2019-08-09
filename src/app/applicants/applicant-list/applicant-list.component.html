@@ -1,19 +1,11 @@
-<mat-list-item *ngFor="let applicant of applicants">
-  <h4 mat-line>Name: {{ applicant.name }}</h4>
-  <h5 mat-line>Unique ID: {{ applicant.uniqueId }}</h5>
-  <h5 mat-line>Income: {{ applicant.income }}</h5>
-  <h5 mat-line>Assets: {{ applicant.assets }}</h5>
-</mat-list-item>
+<div class="list">
+    <mat-list class="applicant">
+        <mat-list-item *ngFor="let applicant of applicants">Name: {{ applicant.name }}
+           <button mat-button>CHOOSE</button>
+           <mat-divider></mat-divider>
+        </mat-list-item>
+      </mat-list>
+</div>
 
 
-<!--
-  <div class="grid-container">
-      <div class="parent"
-           fxLayout="row"
-           fxLayout.xs="column">
-             <mat-card class="medium"
-                       fxFlex="50%">
-            </mat-card>
-    <div>
-  </div>
--->
+

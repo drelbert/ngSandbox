@@ -8,6 +8,7 @@ import { MediaObserver } from '@angular/flex-layout';
 })
 export class AppComponent {
   title = 'ngSandbox';
+
   constructor(public media: MediaObserver) {}
 }
 
