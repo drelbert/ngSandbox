@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -29,6 +31,7 @@ import { ApplicantDetailComponent } from './applicants/applicant-detail/applican
 import { BaseComponent } from './base/base.component';
 import { RiskDashboardComponent } from './risk/risk-dashboard.component';
 import { RiskFactorsComponent } from './risk/risk-factors/risk-factors.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 
 
@@ -49,7 +52,8 @@ const appRoutes: Routes = [
     ApplicantDetailComponent,
     BaseComponent,
     RiskDashboardComponent,
-    RiskFactorsComponent
+    RiskFactorsComponent,
+    CanvasComponent
 
   ],
   imports: [
@@ -71,7 +75,9 @@ const appRoutes: Routes = [
     MatDividerModule,
     MatExpansionModule,
     MatTabsModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

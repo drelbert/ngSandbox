@@ -1,0 +1,23 @@
+
+ui-canvas {
+    #chart {
+        background: #302f2f;
+        height: inherit;
+        width: inherit;
+        color: #1EB980;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .bar {
+            fill: #72DEFF;
+        }
+        
+        .bar:hover {
+            fill: #FF6859;
+        }
+        
+        .axis--x path {
+            display: none;
+        }
+    }
+}
