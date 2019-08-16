@@ -3,65 +3,88 @@
        fxLayout="row"
        fxLayout.xs="column">
 
-   <mat-card class="large"
-            fxFlex="50%"
+   <mat-card class="mdc-card mdc-card--outlined"
             >
-            <mat-card-header class="header">
+            <mat-card-header class="headline">
                 Bank Databases
             <span class="example-spacer"></span>
-            <a routerLink="/applicants" >
-                <mat-icon class="icon"
-                          aria-hidden="false"
-                          routerLinkActive="mat-accent"
-                          aria-label="Nav icon">settings</mat-icon>
-              </a>
+                <mat-icon class="icon">settings</mat-icon>
             </mat-card-header>
             <hr>
-            <mat-card-content class="content">
-                Available: 125
-                API Dev in Progress: 34
+            <mat-card-content class="body-1">
+              <mat-list>
+                <mat-list-item>
+                    <mat-icon class="icon"
+                              matListIcon>more_vert</mat-icon>
+                    Available: 125
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon class="icon"
+                              matListIcon>more_vert</mat-icon>
+                    API Dev in Progress: 34
+                </mat-list-item>
+              </mat-list>
             </mat-card-content>
+            <mat-card-footer>
+              <mat-card-actions align="center">
+                  <a class="content"
+                     routerLink="/applicants">
+                <button mat-button>VIEW</button>
+                </a>
+              </mat-card-actions>
+            </mat-card-footer>
    </mat-card>
 
-    <mat-card class="large"
-            fxFlex="50%"
+    <mat-card class="mdc-card mdc-card--outlined"
+
             >
-            <mat-card-header class="header">
+            <mat-card-header class="headline">
                 Audit Data
             <span class="example-spacer"></span>
-            <a href="#">
                 <mat-icon class="icon"
                           aria-hidden="false"
                           routerLinkActive="mat-accent"
                           aria-label="Nav icon">timeline</mat-icon>
-              </a>
             </mat-card-header>
             <hr>
-            <mat-card-content class="content">
+            <mat-card-content class="body-1">
               In Progress: 456
               Completed: 789
               Findings: 690
           </mat-card-content>
+          <mat-card-footer>
+              <mat-card-actions align="center">
+                  <button mat-button>VIEW</button>
+                </mat-card-actions>
+          </mat-card-footer>
    </mat-card>
 
-   <mat-card class="large"
-             fxFlex="50%"
+   <mat-card class="mdc-card mdc-card--outlined"
              >
-       <mat-card-header class="header">
+       <mat-card-header class="headline">
        Risk Data
          <span class="example-spacer"></span>
-           <a routerLink="/risk">
           <mat-icon class="icon"
                  aria-hidden="false"
                  routerLinkActive="mat-accent"
                  aria-label="Nav icon">add_alert</mat-icon>
-           </a>
         </mat-card-header>
         <hr>
-        <mat-card-content class="content">
+        <mat-card-content class="body-1">
           Current Factors: 178
+          And more content to see what happens
       </mat-card-content>
+      <mat-card-footer>
+          <mat-card-actions align="center">
+              <a routerLink="/risk"
+                 class="content">
+              <button mat-button>VIEW</button>
+              </a>
+            </mat-card-actions>
+      </mat-card-footer>
       </mat-card>
   </div>
 </div>
+
+
 

@@ -7,18 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatListModule } from '@angular/material/list';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatTableModule } from '@angular/material/table';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatButtonModule,
-         MatToolbarModule,
-         MatCardModule } from '@angular/material';
+import { MaterialModule } from './material/material.module';
+import { DirectivesModule } from './directives/directives.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,13 +22,18 @@ import { BaseComponent } from './base/base.component';
 import { RiskDashboardComponent } from './risk/risk-dashboard.component';
 import { RiskFactorsComponent } from './risk/risk-factors/risk-factors.component';
 import { CanvasComponent } from './canvas/canvas.component';
+import { BarComponent } from './bar/bar.component';
+import { DirectivesSandboxComponent } from './directives/directives-sandbox/directives-sandbox.component';
+
+
 
 
 
 const appRoutes: Routes = [
   { path: '', component: BaseComponent },
   { path: 'applicants', component: ApplicantsComponent },
-  { path: 'risk', component: RiskDashboardComponent }
+  { path: 'risk', component: RiskDashboardComponent },
+  { path: 'directives', component: DirectivesSandboxComponent }
 ];
 
 @NgModule({
@@ -53,29 +48,20 @@ const appRoutes: Routes = [
     BaseComponent,
     RiskDashboardComponent,
     RiskFactorsComponent,
-    CanvasComponent
+    CanvasComponent,
+    BarComponent
 
   ],
   imports: [
+    MaterialModule,
+    DirectivesModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatCardModule,
     FlexLayoutModule,
     FormsModule,
     MatFormFieldModule,
-    MatGridListModule,
-    MatMenuModule,
-    MatIconModule,
-    LayoutModule,
     RouterModule.forRoot(appRoutes),
-    MatListModule,
-    MatDividerModule,
-    MatExpansionModule,
-    MatTabsModule,
-    MatTableModule,
     HttpClientModule,
     CommonModule
   ],

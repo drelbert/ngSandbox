@@ -2,10 +2,6 @@
   margin: 20px;
 }
 
-.parent {
-  height: 200px;
-}
-
 .small {
   background-color: #302f2f;
   display: block;
@@ -17,29 +13,20 @@
   margin-right: 10px;
 }
 
-.medium {
+.mdc-card {
   background-color: #302f2f;
   display: block;
-  padding: 16px;
+  padding: relative;
   text-align: left;
   text-decoration: none;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  height: relative;
+  width: relative;
 }
 
-.large {
-  background-color: #302f2f;
-  display: block;
-  padding: 16px;
-  text-align: left;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.header {
+.headline {
   color:#1EB980;
 }
 

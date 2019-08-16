@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <button mat-stroked-button
+            (click)="onlyOdd = !onlyOdd">
+            CLICK FOR ODD NUMBERS
+    </button>
+    <hr>
+    <mat-list class="list-group">
+
+      <div *ngIf="onlyOdd">
+        <mat-list-item class="list-group-item"
+                       [ngClass]="{odd: odd % 2 !== 0}"
+                       *ngFor="let odd of oddNumbers">
+                       {{ odd }}
+        </mat-list-item>
+      </div>
+
+      <div *ngIf="!onlyOdd">
+        <mat-list-item class="list-group-item"
+                       *ngFor="let even of evenNumbers">
+                    {{ even }}
+        </mat-list-item>
+      </div>
+
+    </mat-list>
+  </div>
+  <hr>
+</div>

@@ -9,7 +9,7 @@ import { DataModel } from 'src/app/data/data.model';
   styleUrls: ['./canvas.component.scss']
 })
 export class CanvasComponent implements OnChanges {
-  @ViewChild('chart')
+  @ViewChild('chart', {static: true})
   private chartContainer: ElementRef;
 
   @Input()
