@@ -1,5 +1,6 @@
 import { Component, ElementRef, Input, OnChanges, ViewChild, ViewEncapsulation, HostListener } from '@angular/core';
 import * as d3 from 'd3';
+
 import { DataModel } from 'src/app/data/data.model';
 
 @Component({

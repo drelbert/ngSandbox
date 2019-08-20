@@ -1,4 +1,4 @@
-{
+ {
   "tweets": [
   {"user": "Al", "content": "I really love seafood.",
      "timestamp": " Mon Dec 23 2013 21:30 GMT-0800 (PST)",
@@ -32,5 +32,5 @@
      "timestamp": " Mon Dec 23 2013 11:05 GMT-0800 (PST)",
      "retweets": ["Pris"], "favorites": ["Sally", "Pris"]}
   ]
-  }
-
+}
+  

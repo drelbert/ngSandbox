@@ -25,6 +25,7 @@
     "@material/card": "^3.1.0",
     "@types/d3": "^5.7.2",
     "d3": "^5.9.7",
+    "d3-scale-chromatic": "file:node_modules/d3-scale-chromatic",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",

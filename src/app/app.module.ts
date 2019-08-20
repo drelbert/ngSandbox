@@ -32,7 +32,7 @@ import { DirectivesSandboxComponent } from './directives/directives-sandbox/dire
 const appRoutes: Routes = [
   { path: '', component: BaseComponent },
   { path: 'applicants', component: ApplicantsComponent },
-  { path: 'risk', component: RiskDashboardComponent },
+  { path: 'risk', component: BarComponent },
   { path: 'directives', component: DirectivesSandboxComponent }
 ];
 
