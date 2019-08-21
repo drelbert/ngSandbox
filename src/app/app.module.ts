@@ -7,9 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+
+import { D3VizModule } from './d3-viz/d3-viz.module';
 import { MaterialModule } from './material/material.module';
 import { DirectivesModule } from './directives/directives.module';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardNgComponent } from './dashboard-ng/dashboard-ng.component';
@@ -22,18 +23,15 @@ import { BaseComponent } from './base/base.component';
 import { RiskDashboardComponent } from './risk/risk-dashboard.component';
 import { RiskFactorsComponent } from './risk/risk-factors/risk-factors.component';
 import { CanvasComponent } from './canvas/canvas.component';
-import { BarComponent } from './bar/bar.component';
 import { DirectivesSandboxComponent } from './directives/directives-sandbox/directives-sandbox.component';
-
-
-
+import { D3LineComponent } from './d3-viz/d3-line/d3-line.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: BaseComponent },
   { path: 'applicants', component: ApplicantsComponent },
-  { path: 'risk', component: BarComponent },
-  { path: 'directives', component: DirectivesSandboxComponent }
+  { path: 'directives', component: DirectivesSandboxComponent },
+  { path: 'd3Bar', component: D3LineComponent }
 ];
 
 @NgModule({
@@ -48,13 +46,13 @@ const appRoutes: Routes = [
     BaseComponent,
     RiskDashboardComponent,
     RiskFactorsComponent,
-    CanvasComponent,
-    BarComponent
+    CanvasComponent
 
   ],
   imports: [
     MaterialModule,
     DirectivesModule,
+    D3VizModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
