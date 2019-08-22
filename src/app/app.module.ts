@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule} from '@angular/flex-layout';
@@ -24,14 +24,16 @@ import { RiskDashboardComponent } from './risk/risk-dashboard.component';
 import { RiskFactorsComponent } from './risk/risk-factors/risk-factors.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { DirectivesSandboxComponent } from './directives/directives-sandbox/directives-sandbox.component';
-import { D3LineComponent } from './d3-viz/d3-line/d3-line.component';
+import { D3VizComponent } from './d3-viz/d3-viz.component';
+import { BarService } from './d3-viz/shared/bar.service';
+
 
 
 const appRoutes: Routes = [
   { path: '', component: BaseComponent },
   { path: 'applicants', component: ApplicantsComponent },
   { path: 'directives', component: DirectivesSandboxComponent },
-  { path: 'd3Bar', component: D3LineComponent }
+  { path: 'd3-viz', component: D3VizComponent}
 ];
 
 @NgModule({
@@ -63,7 +65,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     CommonModule
   ],
-  providers: [],
+  providers: [BarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

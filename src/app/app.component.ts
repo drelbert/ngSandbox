@@ -17,6 +17,6 @@ export class AppComponent {
 
 }
 
-// Note that the component is created, updated and destroyed with lifecucle hooks
+// Note that the component is created, updated and destroyed with lifecycle hooks
 // Hook example = ngOnInit() for initialize the component or directive after Angular displays the data-bound properties
 // Hook example = ngOnChanges() responds when Angular sets or resets data-bound inoput properties
