@@ -1,0 +1,45 @@
+[
+  {
+   "month" : 1,
+   "applications": 1,
+   "approved": 2,
+   "failed": 5
+  },
+  {
+    "month" : 2,
+    "applications": 6,
+    "approved": 11,
+    "failed": 13
+   },
+   {
+    "month" : 3,
+    "applications": 3,
+    "approved": 0,
+    "failed": 1
+   },
+   {
+    "month" : 4,
+    "applications": 5,
+    "approved": 2,
+    "failed": 6
+   },
+   {
+    "month" : 5,
+    "applications": 10,
+    "approved": 29,
+    "failed": 16
+   },
+   {
+    "month" : 6,
+    "applications": 9,
+    "approved": 5,
+    "failed": 4
+   },
+   {
+    "month" : 7,
+    "applications": 1,
+    "approved": 2,
+    "failed": 5
+   }
+
+]

@@ -1,10 +1,8 @@
-# SCSS 
-  
+# SCSS
 
-# Components Generation 
+# Components Generation
+
     ng g c  baz
-
-
 
 # NgSandbox
 

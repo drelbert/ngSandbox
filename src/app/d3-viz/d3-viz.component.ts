@@ -1,8 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as d3 from 'd3';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-import { Bar } from './shared/bar.model';
-import { BarService } from './shared/bar.service';
+import { StateLicDataModel } from '../data/stateLicData.model';
+import { StateMtgDataModel } from '../data/stateMtgData.model';
+
 
 @Component({
   selector: 'ui-d3-viz.component',
@@ -11,30 +13,17 @@ import { BarService } from './shared/bar.service';
 })
 
 export class D3VizComponent implements OnInit {
+  data: Observable<StateLicDataModel>;
+  dataMtg: Observable<StateMtgDataModel>;
 
-  @Input()
-  bardata: Bar[] = [];
-
-  constructor(private barService: BarService) {}
-
+  constructor(
+    private http: HttpClient) {
+      this.data = this.http.get<StateLicDataModel>('./assets/stateLicActivity.json');
+      this.dataMtg = this.http.get<StateMtgDataModel>('./assets/stateMtgActivity.json');
+    }
 
 ngOnInit() {
 
-  this.barService.getIds()
-  .then(bardata => this.bardata = bardata)
-
-  d3.select('svg')
-  .selectAll('rect')
-  .data([4, 6, 77, 55, 99])
-  .enter()
-  .append('rect')
-  .attr('width', 30)
-  .attr('height', d => d )
-  .style('fill', '#FE9922')
-  .style('stroke', '#9A8B7A')
-  .style('stroke-width', '1px')
-  .attr('x', (d, i) => i * 40)
-  .attr('y', d => 100 - d);
   }
 
 }

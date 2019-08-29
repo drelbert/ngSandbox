@@ -1,53 +1,28 @@
 [
-       {
-        "State Agency" : "Alabama",
-        "New Applications": 12,
-        "Approved" : 17,
-        "Denied" : 0,
-        "Withdrawn" : 1,
-        "Revoked" : 1,
-        "Surrendered" : 17,
-        "Terminated" : 0
-       },
-       {
-        "State Agency" : "California DRE",
-        "New Applications": 212,
-        "Approved" : 150,
-        "Denied" : 1,
-        "Withdrawn" : 34,
-        "Revoked" : 0,
-        "Surrendered" : 0,
-        "Terminated" : 44
-       },
-       {
-        "State Agency" : "Colorado",
-        "New Applications": 55,
-        "Approved" : 53,
-        "Denied" : 0,
-        "Withdrawn" : 2,
-        "Revoked" : 0,
-        "Surrendered" : 8,
-        "Terminated" : 0
-       },
-       {
-        "State Agency" : "Florida",
-        "New Applications": 142,
-        "Approved" : 136,
-        "Denied" : 2,
-        "Withdrawn" : 20,
-        "Revoked" : 0,
-        "Surrendered" : 30,
-        "Terminated" : 1
-       },
-       {
-        "State Agency" : "Nevada",
-        "New Applications": 34,
-        "Approved" : 32,
-        "Denied" : 0,
-        "Withdrawn" : 15,
-        "Revoked" : 0,
-        "Surrendered" : 10,
-        "Terminated" : 0
-       }
+  {
+   "state" : "Alabama",
+   "newApplications": 12,
+   "approved": 17
+  },
+  {
+   "state" : "California DRE",
+   "newApplications": 212,
+   "approved": 150
+  },
+  {
+   "state" : "Colorado",
+   "newApplications": 55,
+   "approved": 53
+  },
+  {
+   "state" : "Florida",
+   "newApplications": 142,
+   "approved": 136
+  },
+  {
+   "state" : "Nevada",
+   "newApplications": 34,
+   "approved": 32
+  }
 
-    ]
+]
