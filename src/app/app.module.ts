@@ -26,6 +26,7 @@ import { CanvasComponent } from './canvas/canvas.component';
 import { DirectivesSandboxComponent } from './directives/directives-sandbox/directives-sandbox.component';
 import { D3VizComponent } from './d3-viz/d3-viz.component';
 import { BarService } from './d3-viz/shared/bar.service';
+import { SvcAndDiSandboxComponent } from './services-and-di/svc-and-di-sandbox/svc-and-di-sandbox.component';
 
 
 
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
   { path: '', component: BaseComponent },
   { path: 'applicants', component: ApplicantsComponent },
   { path: 'directives', component: DirectivesSandboxComponent },
-  { path: 'd3-viz', component: D3VizComponent}
+  { path: 'd3-viz', component: D3VizComponent},
+  { path: 'svcAndDi', component: SvcAndDiSandboxComponent}
 ];
 
 @NgModule({
@@ -48,7 +50,8 @@ const appRoutes: Routes = [
     BaseComponent,
     RiskDashboardComponent,
     RiskFactorsComponent,
-    CanvasComponent
+    CanvasComponent,
+    SvcAndDiSandboxComponent
 
   ],
   imports: [

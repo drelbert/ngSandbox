@@ -1,8 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as d3 from 'd3';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
-import { Bar } from './shared/bar.model';
-import { BarService } from './shared/bar.service';
+import { StateLicDataModel } from '../data/stateLicData.model';
+import { StateMtgDataModel } from '../data/stateMtgData.model';
+
 
 @Component({
   selector: 'ui-d3-viz.component',
@@ -11,7 +13,10 @@ import { BarService } from './shared/bar.service';
 })
 
 export class D3VizComponent implements OnInit {
+  data: Observable<StateLicDataModel>;
+  dataMtg: Observable<StateMtgDataModel>;
 
+<<<<<<< HEAD
   @Input()
   bardata: BarService[] = [];
 
@@ -35,6 +40,16 @@ ngOnInit() {
   .style('stroke-width', '1px')
   .attr('x', (d, i) => i * 40)
   .attr('y', d => 100 - d);
+=======
+  constructor(
+    private http: HttpClient) {
+      this.data = this.http.get<StateLicDataModel>('./assets/stateLicActivity.json');
+      this.dataMtg = this.http.get<StateMtgDataModel>('./assets/stateMtgActivity.json');
+    }
+
+ngOnInit() {
+
+>>>>>>> 4ac3c2a30a95d86e416db996e3f2e7be4356a8b3
   }
 
 }
