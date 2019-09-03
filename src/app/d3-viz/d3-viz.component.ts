@@ -13,7 +13,7 @@ import { BarService } from './shared/bar.service';
 export class D3VizComponent implements OnInit {
 
   @Input()
-  bardata: Bar[] = [];
+  bardata: BarService[] = [];
 
   constructor(private barService: BarService) {}
 
@@ -21,7 +21,7 @@ export class D3VizComponent implements OnInit {
 ngOnInit() {
 
   this.barService.getIds()
-  .then(bardata => this.bardata = bardata)
+  .then(bardata => bardata = bardata);
 
   d3.select('svg')
   .selectAll('rect')
