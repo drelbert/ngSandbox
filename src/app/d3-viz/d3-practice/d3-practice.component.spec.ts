@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StateMtgActivityComponent } from './state-mtg-activity.component';
+import { D3PracticeComponent } from './d3-practice.component';
 
-describe('StateMtgActivityComponent', () => {
-  let component: StateMtgActivityComponent;
-  let fixture: ComponentFixture<StateMtgActivityComponent>;
+describe('D3PracticeComponent', () => {
+  let component: D3PracticeComponent;
+  let fixture: ComponentFixture<D3PracticeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StateMtgActivityComponent ]
+      declarations: [ D3PracticeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StateMtgActivityComponent);
+    fixture = TestBed.createComponent(D3PracticeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
