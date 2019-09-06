@@ -25,8 +25,9 @@ import { RiskFactorsComponent } from './risk/risk-factors/risk-factors.component
 import { CanvasComponent } from './canvas/canvas.component';
 import { DirectivesSandboxComponent } from './directives/directives-sandbox/directives-sandbox.component';
 import { D3VizComponent } from './d3-viz/d3-viz.component';
-import { BarService } from './d3-viz/shared/bar.service';
 import { SvcAndDiSandboxComponent } from './services-and-di/svc-and-di-sandbox/svc-and-di-sandbox.component';
+import { StateMortgageActivityComponent } from './d3-viz/state-mortgage-activity/state-mortgage-activity.component';
+import { ObservablesSandboxComponent } from './observables/observables-sandbox/observables-sandbox.component';
 
 
 
@@ -35,7 +36,9 @@ const appRoutes: Routes = [
   { path: 'applicants', component: ApplicantsComponent },
   { path: 'directives', component: DirectivesSandboxComponent },
   { path: 'd3-viz', component: D3VizComponent},
-  { path: 'svcAndDi', component: SvcAndDiSandboxComponent}
+  { path: 'svcAndDi', component: SvcAndDiSandboxComponent},
+  { path: 'd3-vizSandbox', component: StateMortgageActivityComponent},
+  { path: 'observables', component: ObservablesSandboxComponent}
 ];
 
 @NgModule({
@@ -51,7 +54,8 @@ const appRoutes: Routes = [
     RiskDashboardComponent,
     RiskFactorsComponent,
     CanvasComponent,
-    SvcAndDiSandboxComponent
+    SvcAndDiSandboxComponent,
+    ObservablesSandboxComponent
 
   ],
   imports: [
@@ -68,7 +72,6 @@ const appRoutes: Routes = [
     HttpClientModule,
     CommonModule
   ],
-  providers: [BarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

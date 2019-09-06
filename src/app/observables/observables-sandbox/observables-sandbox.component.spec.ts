@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { D3PracticeComponent } from './d3-practice.component';
+import { ObservablesSandboxComponent } from './observables-sandbox.component';
 
-describe('D3PracticeComponent', () => {
-  let component: D3PracticeComponent;
-  let fixture: ComponentFixture<D3PracticeComponent>;
+describe('ObservablesSandboxComponent', () => {
+  let component: ObservablesSandboxComponent;
+  let fixture: ComponentFixture<ObservablesSandboxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ D3PracticeComponent ]
+      declarations: [ ObservablesSandboxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(D3PracticeComponent);
+    fixture = TestBed.createComponent(ObservablesSandboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

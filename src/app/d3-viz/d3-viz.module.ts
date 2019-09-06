@@ -5,14 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material/material.module';
 import { D3VizComponent } from './d3-viz.component';
 import { StateLicActivityComponent } from './state-lic-activity/state-lic-activity.component';
-import { D3PracticeComponent } from './d3-practice/d3-practice.component';
+import { StateMortgageActivityComponent } from './state-mortgage-activity/state-mortgage-activity.component';
 
 
 @NgModule({
   declarations: [
     D3VizComponent,
     StateLicActivityComponent,
-    D3PracticeComponent
+    StateMortgageActivityComponent
    ],
   imports: [
     CommonModule,
